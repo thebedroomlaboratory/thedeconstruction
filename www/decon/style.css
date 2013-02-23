@@ -1,0 +1,45 @@
+body { 
+		background:#CCC;
+		font: Helvetica, sans-serif;
+		color: #000; 
+}
+
+h1 {
+	text-align:center;
+	font-family:Helvetica, sans-serif;
+	font-size:24px;
+	color:#09C;
+	padding:20px;
+	}
+
+#responsecontainer
+{
+	background:#fff;
+	-moz-border-radius: 35px;
+border-radius: 35px;
+	width: 160px;
+	margin:auto;
+	color:#09C;
+	font-size:36px;
+	font-family:Helvetica, sans-serif;
+	padding:20px;
+border: none;
+}
+
+#name {
+	color:#09C;
+	text-align:center;
+	font-size:42px;
+	font-weight:bold;
+	font-family:Helvetica, sans-serif;
+	
+}
+
+#temp {
+	color:#000;
+	text-align:center;
+	font-size:62px;
+	font-weight:bold;
+	font-family:Helvetica, sans-serif;
+	
+}
