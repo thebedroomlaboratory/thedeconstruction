@@ -1,0 +1,36 @@
+<?php
+//$xml = simplexml_load_file("test.xml");
+$con = mysql_connect("localhost","root","root");
+if(!$con){
+  //echo "<div id='name'> Title <br> </div>";
+  //echo "<div id='temp'> Connection Open <br> </div>";
+  die('Could not connect: ' . mysql_error());
+}
+//echo "<div id='name'>" . $xml->getName() . "<br> </div>";
+//foreach($xml->children() as $child)
+//{
+//echo  $child->getName() . ": " . $child . "&#176;<br>";
+//}
+//echo "<div id='temp'>" . $xml->Temp . "&#176;<br> </div>";
+//echo "<div id='temp'> Its a celebration bitches! &#176;<br> </div>";
+
+mysql_select_db("tbl_thermostat", $con);
+// perform query
+$result = mysql_query("SELECT * FROM tbl_room_info WHERE device_id='2' ORDER BY unique_id DESC LIMIT 1");
+// check result
+// this shows the actual query sent to MySQL, and the error. Useful for debugging.
+if(!$result){
+  $message  = 'Invalid query: ' . mysql_error() . "\n";
+  $message .= 'Whole query: ' . $query;
+  die($message);
+}
+// use result
+while($row = mysql_fetch_array($result)){
+  echo "<div id='temp" . $row['unique_id'] . "'> " . $row['temperature'] . "&#176;<br> </div>";
+}
+
+mysql_close($con);
+
+?> 
+
+
