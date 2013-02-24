@@ -16,7 +16,7 @@ if(!$con){
 
 mysql_select_db("tbl_thermostat", $con);
 
-$result = mysql_query("SELECT * FROM tbl_room_info");
+$result = mysql_query("SELECT * FROM tbl_room_info WHERE unique_id='1'");
 while($row = mysql_fetch_array($result)){
   echo "<div id='name" . $row['unique_id'] . "'> Room " . $row['device_id'] . "<br> </div>";
   echo "<div id='temp" . $row['unique_id'] . "'> " . $row['temperature'] . "<br> </div>";
