@@ -20,7 +20,7 @@ tempHigh=0
 tempRight=0
 heatingOn=True
 buttonCount=0
-buttonOn=False
+buttonOn=GPIOUtil.isOn()
 buttonOverrideActive=False
 
 webOn=False
