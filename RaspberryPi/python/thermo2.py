@@ -1,4 +1,8 @@
 #!/usr/bin/python
+
+# This script is used for all the heavy lifting in the
+# connections with the database
+
 import MySQLdb
 
 def insertRow(values):

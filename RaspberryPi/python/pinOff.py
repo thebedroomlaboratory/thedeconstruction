@@ -1,3 +1,5 @@
+# Script sets GPIO4 low
+
 from time import sleep
 import sys
 import RPi.GPIO as GPIO

@@ -1,3 +1,5 @@
+# Script which sets all of the GPIO pins on the RPi high
+
 from time import sleep
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)

@@ -1,5 +1,8 @@
-
 #!/usr/bin/python
+
+# Script is a sample script for connecting to the database and loading data
+# into it
+
 import MySQLdb
 
 values = [5, 90, 10, 2, 1]

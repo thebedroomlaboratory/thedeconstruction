@@ -1,3 +1,7 @@
+# Script to make LEDs attached to GPIO7 and GPIO11
+# flash on and off. sleep() is used to associate a
+# delay with the flashing.
+
 from time import sleep
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)

@@ -1,3 +1,5 @@
+# Script sets all GPIO pins low
+
 from time import sleep
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)

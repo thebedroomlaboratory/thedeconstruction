@@ -1,10 +1,8 @@
+# Sets GPIO4 high
+
 from time import sleep
 import sys
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
-
-pin=sys.argv[1]
-GPIO.setup(pin, GPIO.OUT)
-    
-GPIO.output(pin, True)
-
+GPIO.setup(4, GPIO.OUT)
+GPIO.output(4, True)

@@ -1,3 +1,5 @@
+# Self-contained script for setting GPIO4 as high
+
 from time import sleep
 import sys
 import RPi.GPIO as GPIO

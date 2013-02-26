@@ -1,3 +1,6 @@
+# Script that takes a pin number as an argument and reads the
+# value of a switch attached to that GPIO pin
+
 from time import sleep
 import sys
 import RPi.GPIO as GPIO

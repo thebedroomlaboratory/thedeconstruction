@@ -1,3 +1,6 @@
+# Script which reads and prints all of the data received over
+# USB from the Arduino
+
 from time import sleep
 from sys import exit
 import serial

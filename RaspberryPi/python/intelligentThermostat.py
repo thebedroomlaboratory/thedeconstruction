@@ -1,3 +1,11 @@
+# Main script for our project. It reads the sensor data in from the
+# Arduino and processes the readings so that specific values and their
+# delimiters can be parsed/handled. At the end of each line of sensor
+# data, a newline character is detected. When this happens, the control
+# logic for turning on and off the heating circuit runs. This logic also involves
+# reading the button inputs from the website interface and the physical
+# button on the thermostat and keeping them as interrupts.
+
 from time import sleep
 from sys import exit
 import serial
